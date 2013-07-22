@@ -1,0 +1,139 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+       <title>Voltage -- Shows to be (at)</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<script src="scroll.js"></script>
+
+<LINK REL=StyleSheet HREF="styles.css" TYPE="text/css" MEDIA=screen>
+
+
+<script language="javascript">
+
+function microsoftkeypress(){
+  //alert("key pressed:" + event.keyCode);
+  unitedbrowserkeypress(event.keyCode);
+}
+
+
+function nutscrapekeypress(e)
+{
+//    alert("key pressed:" + e.which);
+    unitedbrowserkeypress(e.which);
+
+}
+
+//deal with netscape b.l.u.
+if(navigator.appName == "Netscape"){
+    document.captureEvents(Event.KEYPRESS);
+    document.onkeypress = nutscrapekeypress;
+}
+else document.onkeypress = microsoftkeypress;
+
+function unitedbrowserkeypress(keyPressed){
+  
+
+	//keyPressed = event.keyCode;
+	//document.write(event.keyCode);
+	if((keyPressed == 102) || (keyPressed == 70)){ //Forward || f
+		ScrollOnce(25);
+	}
+ 	else if((keyPressed == 98) || (keyPressed == 66)){ //Backward || b
+		ScrollOnce(-25);
+	}
+	else if((keyPressed == 68) || (keyPressed == 100)){ //D -- past shows
+	  document.location = ("voltagepast.php");
+				//		window.open("voltagepast.php");                  
+	}
+	else if((keyPressed == 104) || (keyPressed == 72)){ //home
+	  window.location = ("voltagehome.php");                  	    
+	}   
+	else if((keyPressed == 105) || (keyPressed == 73)){ //FIRESIDE
+	  //	    window.location = ("ILINK");                  	    
+		//window.open("ILINK");                  	    
+	}   
+	else if((keyPressed == 67) || (keyPressed == 99)){ //C -- campgay
+		//	  window.open("");
+	    //document.location = "");
+	}
+	else if((keyPressed == 69) || (keyPressed == 101)){ //E -- bottle
+		//window.open("");
+	}
+	else if((keyPressed == 103) || (keyPressed == 71)){ //G - grog
+	  //window.open("GLINK");	    
+	}
+	else if((keyPressed == 78) || (keyPressed == 110)){ //n
+		//	window.open("");
+	}
+	else if((keyPressed == 79) || (keyPressed == 111)){ //oberlin
+	  //window.open("OLINK");	  
+	}
+	else if((keyPressed == 80) || (keyPressed == 112)){ //parts and labor 
+		//	  window.open("PLINK");	  
+	}
+	else if((keyPressed == 84) || (keyPressed == 116)){ // T --tastee
+		//	  window.open("");                  	    
+	}
+	else if((keyPressed == 85) || (keyPressed == 117)){ // U -- usamon
+	  //window.open("");	    
+	}
+	else if((keyPressed == 89) || (keyPressed == 121)){ //Y -- ptyr
+		//	    window.open("YLINK");                                    
+	}
+
+
+
+}//end united
+
+</script>
+
+</head>
+<body onLoad="InitialiseScrollableArea()">
+<div id="divTelnet">
+
+   <div id="divHeader">
+Pig Roasts: (See also <a href="voltagepast.php">previous pig roasts</a>)
+   </div>
+   <div id="divVobis">
+    VOBIS
+   </div>
+
+   <div id="divScrollContainer" >
+   <!-- begin absolutely positioned scrollable area object--> 
+     <div id="divScrollContent"> 
+
+
+	<br />
+<b>Warning</b>:  include(../php/schedule.inc) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory in <b>/Users/erik/sandbox/voltage/voltageshows.php</b> on line <b>124</b><br />
+<br />
+<b>Warning</b>:  include() [<a href='function.include'>function.include</a>]: Failed opening '../php/schedule.inc' for inclusion (include_path='.:') in <b>/Users/erik/sandbox/voltage/voltageshows.php</b> on line <b>124</b><br />
+
+<!--
+      <table class="shows" style="width: 100%">
+	 <tr>
+		    <td width="10%">09/04/06:</td>
+	     <td><a href="http://www.emptybottle.com" target="new">Empty Bottle</a> -- Chicago, IL <br />
+              w/ <a href="http://www.myspace.com/lazercrystal" target="new">Lazer Crystal</a>, <a href="http://www.unsoundrecords.com/bands/diminisher/index.php">The Diminisher</a></td>
+	 </tr>
+	 </table>
+-->
+     </div><!-- end divScrollContent --> </div><!-- end
+  divScrollContainer -->
+
+  <div id="divFooter">
+      <a href="javascript:;" onMouseOver="PerformScroll(8)" onMouseOut="CeaseScroll()">F &gt;</a> Forward<br> 
+  <a href="voltagehome.php">H &gt;</a> Home<br>
+    <div id="divSubFooterRight">
+      <a href="javascript:;" onMouseOver="PerformScroll(-8)" onMouseOut="CeaseScroll()">B &gt;</a> Backward<br>
+	  <a href="voltagepast.php">D &gt;</a> Dropped, Bombs (past shows)
+    </div>
+       what the f (D, H)
+       <img src="cursor.gif" width="7" height="13">
+  </div>
+
+</div><!-- end divTelnet -->
+
+
+</body>
+</html>

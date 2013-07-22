@@ -1,0 +1,87 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!--<!doctype html public "-//W3C//DTD HTML 4.0 //EN"> -->
+<html>
+<head>
+       <title>Ringing Voltage Endorsements</title>
+
+<LINK REL=StyleSheet HREF="styles.css" TYPE="text/css" MEDIA=screen>
+
+
+<script language="javascript">
+
+function microsoftkeypress(){
+//    alert("key pressed:" + event.keyCode);
+    unitedbrowserkeypress(event.keyCode);
+}
+
+
+function nutscrapekeypress(e)
+{
+//    alert("key pressed:" + e.which);
+    unitedbrowserkeypress(e.which);
+
+}
+
+//deal with netscape b.l.u.
+if(navigator.appName == "Netscape"){
+    document.captureEvents(Event.KEYPRESS);
+    document.onkeypress = nutscrapekeypress;
+}
+else document.onkeypress = microsoftkeypress;
+
+function unitedbrowserkeypress(keyPressed){
+
+         //document.write(keyPressed);
+         
+         if((keyPressed == 104) || (keyPressed == 72)){ //home
+                  document.location = ("voltagehome.php");
+         }else if((keyPressed == 115) || (keyPressed == 83)){ //sad rapids
+                  document.location = "Voltage - Portcullis.mp3";
+         }else if((keyPressed == 100) || (keyPressed == 68)){ //dontlet
+                  document.location = "Voltage - Drawbridge.mp3";
+         }//endif
+
+
+
+
+}//end onkeypress
+
+</script>
+
+</head>
+<body>
+<div id="divTelnet">
+
+   <div id="divHeader">
+        From the 2005 full length <a href="http://search.insound.com/search/artist.jsp?artist=INS31071"><i>Building The Bass Castle, Vol I</a></a> <br />released on <a href="http://flameshovel.com" target="new">Flameshovel Records</a>
+   </div>
+   <div id="divVobis">
+    VOBIS
+   </div>
+     <div id="divCenterContent" style="padding-top: 50px"> 
+       <table>
+         <tr> 
+	   <td><a href="Voltage - Drawbridge.mp3">D &gt;</a></td>
+	   <td>Drawbridge (5:45)</td>
+         </tr>
+	 <tr>
+	   <td><a href="Voltage - Portcullis.mp3">S &gt; </a></td>
+	   <td>Portcullis (2:40)</td>
+	 </tr>
+	</table>
+              
+           </td><td></td>
+       </tr>
+       </table>
+
+      </div><!-- content -->
+ 
+  <div id="divFooter">
+    <a href="voltagehome.php">H &gt;</a> Home<br>
+       what the f (H, D, S)
+       <img src="cursor.gif" width="7" height="13">
+  </div><!-- end footer -->
+ </div><!-- end telnet -->
+
+</body>
+</html>

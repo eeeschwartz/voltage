@@ -1,0 +1,154 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+             <title>Voltage, the musical enterprise</title>
+<LINK REL=StyleSheet HREF="styles.css" TYPE="text/css" MEDIA=screen>
+
+<meta name="description" content="Voltage Music Establishment" />
+<meta name="keywords" content="Voltage Chicago, Rock, Band, Bouncey, Electronics, Electronixxx, Dolphin Pixxx" />
+<meta name="rating" content="General" />
+<meta name="ROBOTS" content="All" />
+<meta name="revisit-after" content="14 days" />
+
+
+<script src="scroll.js"></script>
+<script language="javascript">
+<!--
+
+function microsoftkeypress(){
+  //alert("key pressed:" + event.keyCode);
+  unitedbrowserkeypress(event.keyCode);
+}
+
+
+function nutscrapekeypress(e)
+{
+//    alert("key pressed:" + e.which);
+    unitedbrowserkeypress(e.which);
+
+}
+
+//deal with netscape b.l.u.
+if(navigator.appName == "Netscape"){
+    document.captureEvents(Event.KEYPRESS);
+    document.onkeypress = nutscrapekeypress;
+}
+else document.onkeypress = microsoftkeypress;
+
+function unitedbrowserkeypress(keyPressed){
+
+  //keyPressed = event.keyCode;
+  //document.write(event.keyCode);
+
+  if((keyPressed == 116) || (keyPressed == 84)){ //tour
+    window.location = ("voltageshows.php");
+  }
+  else if((keyPressed == 115) || (keyPressed == 83)){ //synth kits
+    window.location = ("synthkits.php");
+  }
+  else if((keyPressed == 105) || (keyPressed == 73)){ //i -- band info
+    window.location = ("voltageinfo.php");
+  }
+  else if((keyPressed == 104) || (keyPressed == 72)){ //hot lixx
+    window.location = ("voltagelixx.php");
+  }
+  else if((keyPressed == 65) || (keyPressed == 97)){ //action shots
+    window.location = ("voltagepics.php");
+  }
+  else if((keyPressed == 67) || (keyPressed == 99)){ //contact
+    window.location = ("voltagecontact.php");
+  }
+  else if((keyPressed == 103) || (keyPressed == 71)){//get up on the list
+  //    window.location = ("voltagelist.php");
+  }
+  else if((keyPressed == 108) || (keyPressed == 76)){//Links
+    window.location = ("voltagelinks.php");
+  }//end if
+  else if((keyPressed == 113) || (keyPressed == 81)){//Quit
+    window.location = ("http://www.google.ca/search?sourceid=navclient&ie=UTF-8&oe=UTF-8&q=chicken+salad+duck+mallard");
+  }//end if
+  else if((keyPressed == 102) || (keyPressed == 70)){ //Forward || f
+    PerformScroll(-50);
+  }
+  else if((keyPressed == 98) || (keyPressed == 66)){ //Backward || b
+          PerformScroll(50);
+  }
+
+
+}
+-->
+</script>
+</head>
+<body>
+<div id="divTelnet">
+
+   <div id="divHeader">
+     Welcome to VOBIS, Voltage Online Bidnizz <br>Interface Service
+   </div>
+
+   <div id="divVobis">
+    VOBIS
+   </div>
+       <div id="divCenterContent" style="padding-top: 20px">
+       <table>
+         <tr>
+           <td><a href="voltageshows.php">T &gt;</a> </td>
+     <td>Tour</td>
+         </tr>
+
+         <tr>
+           <td><a href="synthkits.php">S &gt;</a> </td>
+     <td>Synthesizer Kits</td>
+         </tr>
+
+
+   <tr>
+           <td><a href="voltageinfo.php">I &gt;</a> </td>
+     <td>Band Information</td>
+   </tr>
+
+   <tr>
+           <td><a href="voltagelixx.php"> H &gt;</a> </td>
+     <td>Hot Lixx</td>
+   </tr>
+
+   <tr>
+           <td><a href="voltagepics.php">A &gt;</a> </td>
+     <td>ASCII Action Shots</td>
+   </tr>
+
+   <tr>
+           <td><a href="voltagecontact.php">C &gt;</a> </td>
+           <td>Contact</td>
+   </tr>
+<!--
+   <tr>
+           <td><a href="voltagelist.php">G &gt;</a> </td>
+     <td>Get up on that Mailing List</td>
+   </tr>
+    -->
+
+   <tr>
+           <td><a href="voltagelinks.php">L &gt;</a> </td>
+     <td>Links</td>
+   </tr>
+
+
+   <tr>
+           <td><a href="http://www.google.ca/search?sourceid=navclient&ie=UTF-8&oe=UTF-8&q=chicken+salad+duck+mallard">Q &gt;</a> </td>
+     <td>Quit</td>
+   </tr>
+       </table>
+
+      </div><!-- end divCenteredContent -->
+  <div id="divFooter">
+    what the f (S, B, H, A, C, G, L, Q)
+    <img src="cursor.gif" width="7" height="13">
+  </div>
+
+</div> <!-- end divTelnet -->
+
+
+</body>
+
+</html>

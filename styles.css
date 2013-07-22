@@ -1,0 +1,210 @@
+
+#divTelnet {	
+  position: absolute;
+  left: 15%;
+  width: 70%; 
+  top: 10px;
+  border: 2px #ffffff ridge;
+  height: 420px;
+  background: black;
+  color: rgb(128, 255, 0);
+  clip: auto;
+  overflow:-moz-scrollbars-none;
+/*  overflow: hidden; */
+}
+
+.adendum { 
+  font-size:10pt;	
+
+  position: absolute;
+  top: 440px;
+  color: rgb(128, 255, 0);
+  text-align: center; 
+  width: 100%;
+  padding-bottom: 20px;
+}
+
+
+.centeredImage {
+    text-align:center;
+  margin-top:0px;
+  margin-bottom:0px;
+  padding:0px;
+}
+
+#divCenterContent {
+  position: absolute;
+  left: 5%;
+  top: 45px;
+  width: 90%;
+  height:300px; 
+  overflow:auto;
+  text-align:center; /* Counteract to IE5/Win Hack */
+  margin:0px auto; 
+/*  border: 1px #ffffff solid; */
+  /* clip:rect(0,320,240,0); */
+  visibility:visible;
+}
+ 
+#divScrollContent {
+  position:absolute;
+  left: 0;
+  top: 0;
+  text-align: center;  
+  width: 100%;
+  margin:0px auto; 
+  overflow: visible;
+/*  visibility:visible;*/
+  vertical-align: middle;
+} 
+
+#divScrollContainer {
+  position: absolute;
+  left: 5%;
+  top: 45px;
+  width: 90%;
+/*  border: 1px #ffffff solid; */
+  height:280px; 
+  overflow:auto;/* vertical scroll is necessary if js breaks. bug -- horizontal scroll sometimes appears*/
+  text-align:left; /* Counteract to IE5/Win Hack */
+  margin:0px auto; 
+  clip:auto;
+  visibility:visible;
+}
+
+#divHeader {
+  position: absolute;
+  font-size:10pt;
+  top: 10px;
+  left: 10%;
+  right: 10%;
+  width: 80%; 
+  height: 40px;
+  overflow: hidden;
+/*  border: .1em #222222 solid; */
+}
+
+#divVobis {
+  position: absolute;
+  font-size:10pt;
+  top: 10px;
+  left: 90%;
+  width: 9%;
+  text-align: right;
+  /* border: .1em #333334 solid; */
+  overflow: hidden;
+}
+
+
+#divSubFooterLeft {
+  position: absolute;
+  top: 0;
+  left: 0; 
+  width: 50%;
+  overflow: hidden;
+}
+
+#divSubFooterRight {
+  position: absolute;
+  top: 5;
+  left: 50%; 
+  width: 50%;
+  overflow: hidden;
+}
+
+
+#divFooter {
+  position: absolute;
+  top: 325px;
+  left: 5%;
+  height: 45px;
+  width: 90%;
+  border-top: 1px rgb(128, 255, 0) solid; 
+  font-size:10pt;	
+  padding-top: 5px; 
+/*  overflow: auto; */
+  text-align: left;
+/*   border: .1em #333334 solid; */
+}
+
+#divUpControl {	
+  position:absolute; 	
+  width:320; 
+  left:10; 
+  top:10; 
+  z-index:1; 
+  text-align: right;
+} 
+
+#divDownControl { 
+  position:absolute; 
+  width:320;
+  left:10;
+  top:270;
+  z-index:1;
+  text-align: right
+}
+
+body {
+  margin:50px 0px; padding:0px; /* Need to set body margin and padding to get consistency between browsers. */
+  text-align:center; /* Hack for IE5/Win */
+
+  font-family:  fixedsys, terminal , courier new, courier;
+/*  font-size:10pt; */
+
+  background: #FF6600;
+  color: rgb(128, 255, 0)
+  margin:50px 0px; padding:0px; /* Need to set body margin and padding to get consistency between browsers. */
+  text-align:center; /* Hack for IE5/Win */
+}
+
+input { 
+  border: 0;
+  background: black;
+  color:rgb(128, 255, 0);
+}
+
+table
+{
+  position: relative;
+/*  border: 1px #ffffff dotted; */
+  background: black;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+table.shows td { 
+  padding: 7px;
+}
+
+td {
+
+  color: rgb(128, 255, 0);
+  vertical-align:top;
+  text-align: left;
+}
+
+p { 
+  text-align: left;
+}
+
+A:link
+{
+  color: rgb(128, 255, 0);
+  TEXT-DECORATION: none
+}
+A:visited
+{
+  color: rgb(128, 255, 0);
+  TEXT-DECORATION: none
+}
+A:active
+{
+  color: red;
+}
+A:hover
+{
+  COLOR: red;
+}
+
+
