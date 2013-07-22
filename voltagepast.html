@@ -1,0 +1,213 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+       <title>Voltage -- pigtails come in pairs</title>
+<LINK REL=StyleSheet HREF="styles.css" TYPE="text/css" MEDIA=screen>
+
+
+<script src="scroll.js"></script>
+
+<script type="text/javascript">
+
+
+
+
+function microsoftkeypress(){
+  //alert("key pressed:" + event.keyCode);
+  unitedbrowserkeypress(event.keyCode);
+}
+
+
+function nutscrapekeypress(e) {
+  //    alert("key pressed:" + e.which);
+  keyPressed = e.which;
+
+  unitedbrowserkeypress(keyPressed);
+
+}//end nutscrapte
+
+//deal with netscape b.l.u.
+if(navigator.appName == "Netscape"){
+    document.captureEvents(Event.KEYPRESS);
+    document.onkeypress = nutscrapekeypress;
+
+}
+else document.onkeypress = microsoftkeypress;
+
+function unitedbrowserkeypress(keyPressed){
+
+  //keyPressed = event.keyCode;
+  //document.write(event.keyCode);
+
+  if((keyPressed == 102) || (keyPressed == 70)){ //Forward || f
+    ScrollOnce(25);
+  }
+  else if((keyPressed == 98) || (keyPressed == 66)){ //Backward || b
+    ScrollOnce(-25);
+  }
+  else if((keyPressed == 97) || (keyPressed == 65)){ //A  -- detroit art
+      window.open("http://www.detroitartspace.10eastern.com/");
+  }
+  else if((keyPressed == 67) || (keyPressed == 99)){ //C -- paperrad
+      window.open("http://www.paperrad.org/");
+      //document.location = "http://www.paperrad.org/");
+  }
+  else if((keyPressed == 68) || (keyPressed == 100)){ //D -- past shows
+    //      document.location = ("http://www.bangbangband.com/");
+    window.open("http://www.bangbangband.com/");
+  }
+  else if((keyPressed == 69) || (keyPressed == 101)){ //E -- pengo
+      window.open("http://www.carbonrecords.com/bands/pengo/index.html");
+  }
+  else if((keyPressed == 103) || (keyPressed == 71)){ //G - garfield artworks
+      window.open("http://www.garfieldartworks.com/index.htm");
+
+  }
+  else if((keyPressed == 104) || (keyPressed == 72)){ //home
+      window.location = ("voltagehome.php");
+
+  }
+  else if((keyPressed == 105) || (keyPressed == 73)){ //I - ren fair
+      window.open("http://www.royalfaires.com/ARIZONA/arf_main.htm");
+
+  }
+  else if((keyPressed == 106) || (keyPressed == 74)){ //J - bernies
+      window.open("http://www.cringe.com/bs/distillery.htm");
+
+  }
+  else if((keyPressed == 107) || (keyPressed == 75)){ //K - asterisk
+      window.open("http://www.asterisk-nyc.org/");
+
+  }
+  else if((keyPressed == 108) || (keyPressed == 76)){ //L - bushwick blast
+      window.open("http://www.bushwickblast.org");
+
+  }
+  else if((keyPressed == 109) || (keyPressed == 77)){ //Metalux
+      window.open("http://www.metalux.org/");
+
+  }
+  else if((keyPressed == 110) || (keyPressed == 78)){ //Nightlight
+      window.open("http://dyss.net/nightlight/index_LOCALE.php");
+
+  }
+  else if((keyPressed == 79) || (keyPressed == 111)){ //O -- drayton sawyer gang
+    window.open("http://www.draytonsawyergang.com");
+
+  }
+  else if((keyPressed == 80) || (keyPressed == 112)){ //parts and labor
+    window.open("http://www.partsandlabor.net");
+
+  }
+  else if((keyPressed == 81) || (keyPressed == 113)){ //Q - springwater supper club
+    window.open("http://www.springwatersupperclub.com/");
+
+  }
+  else if((keyPressed == 82) || (keyPressed == 114)){ //Rainbow randow
+    window.open("http://www.rainbowrandom.net/");
+
+  }
+  else if((keyPressed == 83) || (keyPressed == 115)){ //shows
+      document.location = ("voltageshows.php");
+
+  }
+  else if((keyPressed == 84) || (keyPressed == 116)){ // T -- the daac
+      window.open("http://thedaac.org/");
+
+  }
+  else if((keyPressed == 85) || (keyPressed == 117)){ // U -- rudyard kipling
+    window.open("http://www.therudyardkipling.com/pages/206997/index.htm");
+  }
+  else if((keyPressed == 86) || (keyPressed == 118)){ // V -- Barr
+    window.open("http://www.barrbarr.com/");
+  }
+  else if((keyPressed == 87) || (keyPressed == 119)){ // W
+    window.open("http://www.wooweb.com/WW/CODE/W.O.O.1.html");
+  }
+  else if((keyPressed == 88) || (keyPressed == 120)){ // X -- Quails
+    window.open("http://www.thequails.com/");
+  }
+  else if((keyPressed == 89) || (keyPressed == 121)){ //Y -- ptyr
+      window.open("http://www.pterodactyl.info/");
+  }
+  else if((keyPressed == 90) || (keyPressed == 122)){ //Z -- big orbit
+      window.open("http://www.bigorbitgallery.com/slindex.html");
+  }
+  else if((keyPressed == 63) || (keyPressed == 121)){ // ?Question
+      window.open("http://www.bewildered.com/welcome.html");
+  }
+  else if(keyPressed == 49){ //1 - sabers
+    window.open("http://www.neurotrecordings.com/");
+  }
+  else if(keyPressed == 50){ //2 - talkinghead
+    window.open("http://www.talkingheadclub.com/");
+  }
+  else if(keyPressed == 51){ //3 - tokyo rose
+    window.open("http://members.tripod.com/~sushirock/");
+  }
+  else if(keyPressed == 52){ //4 - pilot light
+    window.open("http://www.thepilotlight.com/");
+  }
+  else if(keyPressed == 53){ //5 - radio cherokee
+    window.open("http://www.radiocherokee.net/");
+  }
+  else if(keyPressed == 54){ //6 - the brick
+    window.open("http://www.thebrickkcmo.com/");
+  }
+  else if(keyPressed == 55){ //7 - tracy and pla
+    window.open("http://www.tracyandtheplastics.com/");
+  }
+  else if(keyPressed == 56){ //8 - the bottle
+    window.open("http://www.emptybottle.com/");
+  }
+  else if(keyPressed == 57){ //9 - Death from above
+    window.open("http://www.deathdeathdeath.cjb.net/");
+  }
+
+
+
+}//end united
+
+</script>
+
+</head>
+<body onLoad="InitialiseScrollableArea()">
+<div id="divTelnet">
+
+   <div id="divHeader">
+       Voltage History of Male Sexuality
+   </div>
+   <div id="divVobis">
+    VOBIS
+   </div>
+
+   <div id="divScrollContainer" >
+   <!-- begin absolutely positioned scrollable area object-->
+     <div id="divScrollContent">
+       <table class="shows">
+
+  <br />
+<b>Warning</b>:  include(../php/past_schedule.inc) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory in <b>/Users/erik/sandbox/voltage/voltagepast.php</b> on line <b>232</b><br />
+<br />
+<b>Warning</b>:  include() [<a href='function.include'>function.include</a>]: Failed opening '../php/past_schedule.inc' for inclusion (include_path='.:') in <b>/Users/erik/sandbox/voltage/voltagepast.php</b> on line <b>232</b><br />
+
+       </table>
+     </div><!-- end divScrollContent -->
+  </div><!-- end divScrollContainer -->
+
+  <div id="divFooter">
+      <a href="javascript:;" onMouseOver="PerformScroll(8)" onMouseOut="CeaseScroll()">F &gt;</a> Forward<br>
+    <a href="voltagehome.php">H &gt;</a> Home<br>
+    <div id="divSubFooterRight">
+      <a href="javascript:;" onMouseOver="PerformScroll(-8)" onMouseOut="CeaseScroll()">B &gt;</a> Backward<br>
+    <a href="voltageshows.php">S &gt;</a> Shows
+    </div>
+       what the f (A-I, K-P, R-U, W, Y, ?, 1-9)
+       <img src="cursor.gif" width="7" height="13">
+  </div>
+
+</div><!-- end divTelnet -->
+
+
+</body>
+</html>
