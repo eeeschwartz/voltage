@@ -1,0 +1,120 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+<head>
+       <title>Voltage Synth Kits</title>
+
+<LINK REL=StyleSheet HREF="styles.css" TYPE="text/css" MEDIA=screen>
+
+
+<script language="javascript">
+
+function microsoftkeypress(){
+//    alert("key pressed:" + event.keyCode);
+    unitedbrowserkeypress(event.keyCode);
+}
+
+
+function nutscrapekeypress(e)
+{
+//    alert("key pressed:" + e.which);
+    unitedbrowserkeypress(e.which);
+
+}
+
+//deal with netscape b.l.u.
+if(navigator.appName == "Netscape"){
+    document.captureEvents(Event.KEYPRESS);
+    document.onkeypress = nutscrapekeypress;
+}
+else document.onkeypress = microsoftkeypress;
+
+function unitedbrowserkeypress(keyPressed){
+
+         //document.write(keyPressed);
+         if((keyPressed == 97) || (keyPressed == 65)){ //a
+                  window.open("Wundernoise041306.asm");
+      }
+         else if((keyPressed == 104) || (keyPressed == 72)){ //home
+                  document.location = ("index.html");
+         }else if((keyPressed == 115) || (keyPressed == 83)){ //solder movie
+                  window.open("soldering_tutorial.mov");
+         }
+  else if((keyPressed == 109) || (keyPressed == 77)){ //manual
+      window.open("Who_Got_A_Big_Ol_Manual.pdf");
+
+  }
+
+  else if((keyPressed == 116) || (keyPressed == 84)){ //t b immaculate
+    //document.location = ("voltagetb.html");
+         }//endif
+
+
+
+
+}//end onkeypress
+
+</script>
+<LINK REL=StyleSheet HREF="tb_cv.css" TYPE="text/css" MEDIA=screen>
+</head>
+<body>
+<div id="divTelnet">
+
+   <div id="divHeader">
+Who Got A Big Ol' Butt Synthesizer Kits!
+   </div>
+   <div id="divVobis">
+    VOBIS
+   </div>
+
+     <div id="divCenterContent" style="padding-top:0px;">
+<p style="padding-left:50px;padding-right:50px">
+6/06
+<br />
+Because Voltage has the love:
+Hard to listen to art-rock electronics are now within range of the everyman.
+<br/><br/>
+  We designed a new digital synthesizer specifically geared towards noise
+heads who are interested in learning more about electronics theory and
+design, all while making ears bleed!  Designed with circuitbending and
+expansion in mind as well, the beast runs on batteries or wall warts, comes
+complete with manual and instructional video, and measures less than 2x2".
+Currently she runs $30 plus shipping.
+Please let us know if you've got any questions or are interested in picking
+up a kit -- voltage [A_T] camp [D_A_S_H] gay [D_O_T] org.
+</p>
+
+       <table>
+         <tr>
+     <td><a href="Who_Got_A_Big_Ol_Manual.pdf" target="new">M &gt;</a></td>
+     <td>Who Got A Big Ol' Butt? Manual (.pdf -- 10MB)</td>
+         </tr>
+
+   <tr>
+     <td><a href="soldering_tutorial.mov" target="new">S &gt;</a></td>
+     <td>Soldering tutorial movie (.mov -- 4MB)</td>
+   </tr>
+   <tr>
+     <td><a href="Wundernoise041306.asm" target="new">A &gt;</a></td>
+     <td>Source code (.asm -- 43KB)</td>
+   </tr>
+
+       </table>
+     </div><!-- end divScrollContent -->
+
+     <div id="divFooter">
+     <a href="index.html">H &gt;</a> Home <br>
+        what the f (H, M, S, A, M)
+       <img src="cursor.gif" width="7" height="13">
+     </div>
+
+</div> <!-- end divTelnet -->
+
+       <div class="adendum">
+       <h4 >The Beast Herself</h4>
+       <p class="centeredImage"><img style="border: 2px #ffffff ridge;" width="338" height="281" src="kit_assembled_close_cropped_small.jpg" alt="the kit itself"/></p>
+       </div>
+
+
+</body>
+</html>

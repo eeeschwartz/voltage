@@ -1,0 +1,104 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+<head>
+       <title>Voltage Ringtones</title>
+
+<LINK REL=StyleSheet HREF="styles.css" TYPE="text/css" MEDIA=screen>
+
+
+<script src="scroll.js"></script>
+
+<script language="javascript">
+
+function microsoftkeypress(){
+//    alert("key pressed:" + event.keyCode);
+    unitedbrowserkeypress(event.keyCode);
+}
+
+
+function nutscrapekeypress(e)
+{
+//    alert("key pressed:" + e.which);
+    unitedbrowserkeypress(e.which);
+
+}
+
+//deal with netscape b.l.u.
+if(navigator.appName == "Netscape"){
+    document.captureEvents(Event.KEYPRESS);
+    document.onkeypress = nutscrapekeypress;
+}
+else document.onkeypress = microsoftkeypress;
+
+function unitedbrowserkeypress(keyPressed){
+
+         //document.write(keyPressed);
+
+  if((keyPressed == 102) || (keyPressed == 70)){ //Forward || f
+    ScrollOnce(25);
+  }
+  else if((keyPressed == 98) || (keyPressed == 66)){ //Backward || b
+    ScrollOnce(-25);
+  }
+         if((keyPressed == 104) || (keyPressed == 72)){ //home
+                  document.location = ("index.html");
+         }
+   else if((keyPressed == 101) || (keyPressed == 69)){ //e d super
+                  window.open("ELINK");
+         }
+   else if((keyPressed == 114) || (keyPressed == 82)){ // return
+                  document.location = ("voltageinfo.html");
+         }
+   else if((keyPressed == 116) || (keyPressed == 84)){ //t b immaculate
+     //document.location = ("TLINK");
+         }//endif
+
+}//end onkeypress
+
+</script>
+
+</head>
+<body onLoad="InitialiseScrollableArea()">
+
+<div id="divTelnet">
+
+   <div id="divHeader">
+       Circuitry, Wizardry
+   </div>
+   <div id="divVobis">
+    VOBIS
+   </div>
+   <div id="divScrollContainer" >
+   <!-- begin absolutely positioned scrollable area object-->
+     <div id="divScrollContent">
+
+        <img src="byron1.jpg" border="0" alt="Lord Byron"/> <br />
+        <img src="sterling1.jpg"  border="0" alt="Sterling"/> <br />
+        <img src="watchpcb.jpg"  border="0" alt="Watch Printed Circuit Board" /> <br />
+        <img src="watch.jpg"  border="0" alt="The Watch!"/> <br />
+        <img src="steady1.jpg"  border="0" alt="Rock Steady Bass Machine" />
+
+     </div><!-- end divScrollContent -->
+  </div><!-- end divScrollContainer -->
+
+     <div id="divFooter">
+       <a href="javascript:;" onMouseOver="PerformScroll(8)" onMouseOut="CeaseScroll()">F &gt;</a> Forward<br>
+    <a href="index.html">H &gt;</a> Home<br>
+    <div id="divSubFooterRight">
+      <a href="javascript:;" onMouseOver="PerformScroll(-8)" onMouseOut="CeaseScroll()">B &gt;</a> Backward<br>
+    <a href="voltageinfo.html">R &gt;</a> Return
+    </div>
+        what the f (H, B, F, R)
+       <img src="cursor.gif" width="7" height="13">
+     </div>
+
+</div> <!-- end divTelnet -->
+
+
+       <div class="adendum">
+       <a name="tb">
+       </div>
+
+</body>
+</html>
